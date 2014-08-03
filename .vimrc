@@ -32,6 +32,10 @@ set helplang=cn
 " Supertab default indent
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
+" Vim-javascript provides syntax and indent
+let javascript_enable_domhtmlcss = 1
+let javascript_conceal = 1
+
 " Set Key Mapping
 " GCC compile and name its .out file
 nmap <C-c><C-c> :!gcc -Wall % -o %:r.out<CR>
