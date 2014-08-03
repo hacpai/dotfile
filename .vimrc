@@ -46,8 +46,8 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 " <F2> insert time
 imap <F2> <C-R>=strftime("ec")<CR>
-" <F1> call ToggleSketch
-map <F1> :call ToggleSketch()<CR>
+" <F3> call ToggleSketch
+map <F3> :call ToggleSketch()<CR>
 " Key Binding like Bash
 cmap <c-a> <home>
 cmap <c-e> <end>
