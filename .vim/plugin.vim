@@ -20,7 +20,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
 Plugin 'valloric/youcompleteme'
 Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/syntastic'
 ""Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 ""Plugin 'L9'
