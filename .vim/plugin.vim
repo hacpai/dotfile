@@ -19,6 +19,7 @@ Plugin 'TimothyYe/vim-tips'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
 Plugin 'valloric/youcompleteme'
+Plugin 'pangloss/vim-javascript'
 ""Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 ""Plugin 'L9'
