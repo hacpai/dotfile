@@ -40,6 +40,10 @@ let javascript_conceal = 1
 let mapleader=";"
 let g:EasyMotion_smartcase = 0
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" __jsbeautify
+nnoremap <F4> :call g:_Jsbeautify()<CR>
+
 nmap s <Plug>(easymotion-s)
 nmap S <Plug>(easymotion-s2)
 map <Leader>j <Plug>(easymotion-j)
