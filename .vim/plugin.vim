@@ -27,6 +27,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'sketch.vim'
 Plugin 'html5.vim'
 Plugin '_jsbeautify'
+Plugin 'FencView.vim'
 " Git plugin not hosted on GitHub
 ""Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
