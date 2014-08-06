@@ -54,10 +54,17 @@ nmap <tab> v>
 nmap <s-tab> v<
 vmap <tab> >gv
 vmap <s-tab> <gv
+" "jj"install of <ESC>
+imap jj <esc>
 " <F2> insert time
 imap <F2> <C-R>=strftime("ec")<CR>
 " <F3> call ToggleSketch
 map <F3> :call ToggleSketch()<CR>
+" Insert mode move
+imap <c-j> <down>
+imap <c-k> <up>
+imap <c-l> <right>
+imap <c-h> <left>
 " Key Binding like Bash
 cmap <c-a> <home>
 cmap <c-e> <end>
