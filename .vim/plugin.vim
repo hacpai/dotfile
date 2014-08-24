@@ -18,10 +18,10 @@ Plugin 'asins/vimcdoc'
 Plugin 'TimothyYe/vim-tips'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
-Plugin 'valloric/youcompleteme'
 Plugin 'pangloss/vim-javascript'
 Plugin 'Lokaltog/vim-easymotion'
-""Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " plugin from http://vim-scripts.org/vim/scripts.html
 ""Plugin 'L9'
 Plugin 'sketch.vim'
