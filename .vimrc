@@ -92,10 +92,14 @@ set autoindent
 " Set the encodings
 set encoding=utf-8
 set fileencodings=utf-8,gb2312,gbk,latin1
+" <Backspace> used delete in insert mode
+set bs=2
 " Smart indent
 set smartindent
 " Tab is 4 lattice
 set tabstop=4
+" Always display status line
+set laststatus=2
 set shiftwidth=4
 " Smart Tab
 set smarttab
@@ -115,14 +119,24 @@ set clipboard+=unnamed
 " Automatically save
 set autowrite
 " Display the cursor line
-"set cursorline
+set cursorline
+" highlight current line
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
 set magic
+" Ignore case-insensitive during retrieval
+set ignorecase
+" Highlighted match during retrieval
+set hls
+" 文件在Vim之外修改过，自动重新读入
+set autoread
 " Open code folding
 "set foldenable
 " Fold a maximum of 4 layer
 "set foldlevel=4
-" Set the fold method
-"set foldmethod=indent
+" Set the code folding 
+set foldmethod=syntax
 "set foldcolumn=0
 " According to the file type loading plug-in
 filetype plugin indent on
