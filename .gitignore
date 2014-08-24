@@ -5,6 +5,6 @@
 Session.vim
 .netrwhist
 *~
-.vim/bundle/
+.vim/bundle
 # KDE directory preferences
 .directory
