@@ -57,7 +57,7 @@ nmap <tab> v>
 nmap <s-tab> v<
 vmap <tab> >gv
 vmap <s-tab> <gv
-" "jj"install of <ESC>
+" "jj"instead of <ESC>
 imap jj <esc>
 " <F2> insert time
 imap <F2> <C-R>=strftime("ec")<CR>
@@ -68,8 +68,9 @@ imap <c-n> <down>
 imap <c-p> <up>
 imap <c-f> <right>
 imap <c-b> <left>
-imap <Leader>d <backspace>
 imap <Leader>b <Esc>xi
+imap <leader>b0 <esc>v0di
+imap <leader>b$ <esc>v$di
 "imap <c-h> <backspace>
 " Key Binding like Bash
 cmap <c-a> <home>
