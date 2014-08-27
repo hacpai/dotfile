@@ -64,10 +64,13 @@ imap <F2> <C-R>=strftime("ec")<CR>
 " <F3> call ToggleSketch
 map <F3> :call ToggleSketch()<CR>
 " Insert mode move
-imap <c-j> <down>
-imap <c-k> <up>
-imap <c-l> <right>
-imap <c-h> <left>
+imap <c-n> <down>
+imap <c-p> <up>
+imap <c-f> <right>
+imap <c-b> <left>
+imap <Leader>d <backspace>
+imap <Leader>b <Esc>xi
+"imap <c-h> <backspace>
 " Key Binding like Bash
 cmap <c-a> <home>
 cmap <c-e> <end>
