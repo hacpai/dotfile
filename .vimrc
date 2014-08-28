@@ -155,10 +155,10 @@ imap <c-n> <down>
 imap <c-p> <up>
 imap <c-f> <right>
 imap <c-b> <left>
-imap <Leader>b <Esc>xi
+"imap <c-d> <Esc>xi
 imap <leader>b0 <esc>v0di
 imap <leader>b$ <esc>v$di
-"imap <c-h> <backspace>
+"imap <leader>d <backspace>
 " Key Binding like Bash
 cmap <c-a> <home>
 cmap <c-e> <end>
