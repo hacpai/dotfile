@@ -155,7 +155,7 @@ imap <c-n> <down>
 imap <c-p> <up>
 imap <c-f> <right>
 imap <c-b> <left>
-"imap <c-d> <Esc>xi
+"imap <c-d> <Esc>xa
 imap <leader>b0 <esc>v0di
 imap <leader>b$ <esc>v$di
 "imap <leader>d <backspace>
