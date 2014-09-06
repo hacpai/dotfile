@@ -202,7 +202,7 @@ set showmatch
 " Types of inspection
 filetype on
 " File type detection
-filetype plugin indent on
+filetype plugin on
 " Open cursor scale
 set ruler
 " Shared clipboard contents
