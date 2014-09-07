@@ -136,6 +136,10 @@ map <Leader>k <Plug>(easymotion-k)
 " __jsbeautify
 nnoremap <F4> :call g:_Jsbeautify()<CR>
 
+" Vim-instant-markdown
+let g:instant_markdown_autostart = 0
+let g:instant_markdown_slow = 1
+
 " Set Key Mapping
 " GCC compile and name its .out file
 nmap <C-c><C-c> :!gcc -Wall % -o %:r.out<CR>
