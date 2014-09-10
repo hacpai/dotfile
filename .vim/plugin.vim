@@ -23,7 +23,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'Shougo/neocomplete.vim'
-Plugin 'suan/vim-instant-markdown'
+Plugin 'isnowfy/python-vim-instant-markdown'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
