@@ -140,6 +140,10 @@ nnoremap <F4> :call g:_Jsbeautify()<CR>
 "let g:instant_markdown_autostart = 0
 "let g:instant_markdown_slow = 1
 
+" Vim-markdown
+let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_initial_foldlevel=1
+
 " Set Key Mapping
 " GCC compile and name its .out file
 nmap <C-c><C-c> :!gcc -Wall % -o %:r.out<CR>
