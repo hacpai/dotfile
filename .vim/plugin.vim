@@ -26,6 +26,7 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'isnowfy/python-vim-instant-markdown'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'kannokanno/previm'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
