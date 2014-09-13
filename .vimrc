@@ -144,6 +144,13 @@ nnoremap <F4> :call g:_Jsbeautify()<CR>
 let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_initial_foldlevel=1
 
+" previm
+let g:previm_open_cmd = 'open -a Safari'
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
+
 " Set Key Mapping
 " GCC compile and name its .out file
 nmap <C-c><C-c> :!gcc -Wall % -o %:r.out<CR>
