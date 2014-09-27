@@ -26,10 +26,10 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kannokanno/previm'
+Plugin 'othree/html5.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
-Plugin 'html5.vim'
 Plugin '_jsbeautify'
 Plugin 'FencView.vim'
 " Git plugin not hosted on GitHub
