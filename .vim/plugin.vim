@@ -24,13 +24,15 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sjl/gundo.vim'
 
-
+" HTML/JS/JQUERY/CSS
 Plugin 'othree/html5.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'nono/jquery.vim'
 Plugin 'elzr/vim-json'
+Plugin 'kchmck/vim-coffee-script'
+
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
