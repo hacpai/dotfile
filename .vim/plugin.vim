@@ -16,22 +16,32 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tomasr/molokai'
 Plugin 'rainbow_parentheses.vim'
 Plugin 'bling/vim-airline'
+
 Plugin 'asins/vimcdoc'
 Plugin 'TimothyYe/vim-tips'
+
+Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sjl/gundo.vim'
-Plugin 'ervandew/supertab'
+
+
+Plugin 'othree/html5.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'maksimr/vim-jsbeautify'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'tpope/vim-fugitive'
+Plugin 'nono/jquery.vim'
+
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'ervandew/supertab'
+Plugin 'Lokaltog/vim-easymotion'
+
 Plugin 'godlygeek/tabular'
+
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kannokanno/previm'
-Plugin 'othree/html5.vim'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
