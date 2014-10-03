@@ -6,6 +6,12 @@ if [ -f ~/.git-prompt.sh ]; then
   export PS1='\n\[\e[0;30m\]┌─\[\e[0m\]\[\e[01;30m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\n\[\e[0;30m\]└───\[\e[0m\]\$ \[\e[00;33m\]$(__git_ps1 "(%s)")\[\e[00m\] '
 fi
 
+#for brew
+if brew list | grep coreutils > /dev/null ; then
+  PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+  alias ls='ls -F --show-control-chars --color=auto'
+  eval `gdircolors -b $HOME/.dir_colors`
+fi
 
 #!/bin/bash
 # see: http://blog.tomtung.com/2009/11/cowsay-fortune
