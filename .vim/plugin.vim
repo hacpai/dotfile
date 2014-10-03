@@ -33,6 +33,7 @@ Plugin 'nono/jquery.vim'
 Plugin 'elzr/vim-json'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'groenewege/vim-less'
+Plugin 'gorodinskiy/vim-coloresque'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
