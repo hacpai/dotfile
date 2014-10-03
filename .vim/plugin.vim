@@ -32,7 +32,7 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'nono/jquery.vim'
 Plugin 'elzr/vim-json'
 Plugin 'kchmck/vim-coffee-script'
-
+Plugin 'groenewege/vim-less'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
