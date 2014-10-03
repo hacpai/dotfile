@@ -16,6 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tomasr/molokai'
 Plugin 'rainbow_parentheses.vim'
 Plugin 'bling/vim-airline'
+Plugin 'Yggdroot/indentLine'
 
 Plugin 'asins/vimcdoc'
 Plugin 'TimothyYe/vim-tips'
