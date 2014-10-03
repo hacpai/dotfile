@@ -149,6 +149,9 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>k <Plug>(easymotion-k)
 
+" Gundo.vim
+nnoremap <F5> :GundoToggle<CR>
+
 " __jsbeautify
 nnoremap <F4> :call g:_Jsbeautify()<CR>
 
