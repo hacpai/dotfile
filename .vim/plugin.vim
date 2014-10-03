@@ -30,6 +30,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'nono/jquery.vim'
+Plugin 'elzr/vim-json'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
