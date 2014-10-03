@@ -26,9 +26,25 @@ colorscheme molokai
 let g:molokai_original = 1
 let g:rehash256 = 1
 
+" Vim-airline
+set laststatus=2
+"let g:airline_left_sep='>'
+"let g:airline_right_sep='<'
+let g:airline_detect_modified=1
+let g:airline_detect_paste=1
+set guifont=Source\ Code\ Pro\ 18
+let g:airline_powerline_fonts = 1
+let g:airline_theme='molokai'
+let g:ariline_enable_branch=1
+let g:airline_enable_syntastic=1
+"let  g:airline_section_b = '%{strftime("%c")}'
+"let g:airline_section_y = 'BN: %{bufnr("%")}'
+let g:airline#extensions#tavline#enabled = 1
+
 " Vim Chinese Documentation
 let helptags = $VIM."/vimcdoc/doc"
 set helplang=cn
+
 " Supertab default indent
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
