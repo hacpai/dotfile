@@ -149,11 +149,11 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>k <Plug>(easymotion-k)
 
-" Gundo.vim
-nnoremap <F5> :GundoToggle<CR>
-
 " __jsbeautify
 nnoremap <F4> :call g:_Jsbeautify()<CR>
+
+" Gundo.vim
+nnoremap <F5> :GundoToggle<CR>
 
 " Vim-instant-markdown
 "let g:instant_markdown_autostart = 0
