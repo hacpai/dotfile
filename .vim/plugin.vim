@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tomasr/molokai'
+Plugin 'rainbow_parentheses.vim'
 Plugin 'bling/vim-airline'
 Plugin 'asins/vimcdoc'
 Plugin 'TimothyYe/vim-tips'
