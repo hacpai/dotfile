@@ -34,7 +34,7 @@ Plugin 'elzr/vim-json'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'groenewege/vim-less'
 Plugin 'gorodinskiy/vim-coloresque'
-
+Plugin 'ap/vim-css-color'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'Shougo/neocomplete.vim'
