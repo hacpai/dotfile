@@ -260,6 +260,7 @@ set number
 " Syntax highlighting
 syntax on
 syntax enable
+set t_Co=256
 " Auto indent
 set autoindent
 " Set the encodings
