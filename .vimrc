@@ -202,6 +202,12 @@ nnoremap <F4> :call g:_Jsbeautify()<CR>
 
 " Gundo.vim
 nnoremap <F5> :GundoToggle<CR>
+" 撤销树持久化存储
+try
+    set undodir=~/.vim/temp_dirs/undodir
+    set undofile
+catch
+endtry
 
 " Vim-instant-markdown
 "let g:instant_markdown_autostart = 0
