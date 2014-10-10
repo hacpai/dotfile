@@ -1,0 +1,22 @@
+[color]
+	ui = true
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	unstage = reset HEAD
+	last = log -1
+[color "diff"]
+	meta = blue black bold
+[user]
+	name = arcticlion
+	email = david.malan@aol.com
+[core]
+	excludesfile = /Users/MasterMac/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/1.9.4.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = simple
+[http]
