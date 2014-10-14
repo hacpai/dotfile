@@ -281,7 +281,7 @@ set bs=2
 set smartindent
 " Tab is 4 lattice
 set tabstop=4
-" Always display status line
+" Always display Status Bar
 set laststatus=2
 set shiftwidth=4
 " Smart Tab
@@ -295,25 +295,24 @@ set showmatch
 filetype on
 " According to different types of loading corresponding detected plugins
 filetype plugin on
-" Open cursor scale
+" Display cursor location 
 set ruler
 " Shared clipboard contents
 set clipboard+=unnamed
 " Automatically save
 set autowrite
-" Display the cursor line
-set cursorline
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
-set cursorline cursorcolumn
+set cursorline 
+set cursorcolumn
 set magic
 " 开启实时搜索功能
 set incsearch
 " Ignore case-insensitive during searching
 set ignorecase
-" Highlighted match during retrieval
-set hls
+" Highlighted match during searching
+set hlsearch
 " 文件在Vim之外修改过，自动重新读入
 set autoread
 
