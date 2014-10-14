@@ -243,8 +243,8 @@ imap <c-n> <down>
 imap <c-p> <up>
 imap <c-f> <right>
 imap <c-b> <left>
-"imap <c-d> <Esc>xa
-imap <leader>b0 <esc>v0di
+"imap <c-d> <EscAccording to different types of loading corresponding detected
+"plug-inimap <leader>b0 <esc>v0di
 imap <leader>b$ <esc>v$di
 "imap <leader>d <backspace>
 " Key Binding like Bash
@@ -260,7 +260,10 @@ cnoremap <esc><c-f> <s-right>
 
 " The Base Setting
 " vim default setting
+" 关闭兼容模式
 set nocompatible
+" vim 自身命令行模式智能补全
+set wildmenu
 " Opening line number
 set number
 " Syntax highlighting
@@ -290,7 +293,7 @@ set expandtab
 set showmatch
 " Types of inspection
 filetype on
-" File type detection
+" According to different types of loading corresponding detected plugins
 filetype plugin on
 " Open cursor scale
 set ruler
@@ -305,12 +308,15 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 set magic
-" Ignore case-insensitive during retrieval
+" 开启实时搜索功能
+set incsearch
+" Ignore case-insensitive during searching
 set ignorecase
 " Highlighted match during retrieval
 set hls
 " 文件在Vim之外修改过，自动重新读入
 set autoread
+
 " Open code folding
 "set foldenable
 " Fold a maximum of 4 layer
