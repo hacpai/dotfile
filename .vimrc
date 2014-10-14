@@ -324,11 +324,14 @@ set shiftwidth=4
 set softtabstop=4
 
 " Open code folding
+" 操作：za，打开或关闭当前折叠；zM，关闭所有折叠；zR，打开所有折叠。
 "set foldenable
 " Fold a maximum of 4 layer
 "set foldlevel=4
-" Set the code folding
+" 基于语法进行代码折叠
 set foldmethod=syntax
+" 启动 vim 时自动关闭折叠代码
+set nofoldenable
 "set foldcolumn=0
 " It is a variety of automatic code completion plugin
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
