@@ -266,8 +266,9 @@ set nocompatible
 set wildmenu
 " Opening line number
 set number
-" Syntax highlighting
+" 允许用指定语法高亮配色方案替换默认方案
 syntax on
+" Open syntax highlighting
 syntax enable
 set t_Co=256
 " Auto indent
@@ -279,16 +280,10 @@ set fileencodings=utf-8,gb2312,gbk,latin1
 set bs=2
 " Smart indent
 set smartindent
-" Tab is 4 lattice
-set tabstop=4
 " Always display Status Bar
 set laststatus=2
-set shiftwidth=4
 " Smart Tab
 set smarttab
-set softtabstop=4
-" Space replace Tab
-set expandtab
 " Display automatic matching(){}[]
 set showmatch
 " Types of inspection
@@ -316,6 +311,18 @@ set hlsearch
 " 文件在Vim之外修改过，自动重新读入
 set autoread
 
+" Open code indent
+" 自适应不同语言的智能缩进
+filetype indent on
+" Space replace Tab
+set expandtab
+" 设置编辑时制表符占用空格数
+set tabstop=4
+" 设置格式化时制表符所占空格数
+set shiftwidth=4
+" 让 vim 把连续数量的空格视为一个制表符
+set softtabstop=4
+
 " Open code folding
 "set foldenable
 " Fold a maximum of 4 layer
@@ -323,8 +330,6 @@ set autoread
 " Set the code folding
 set foldmethod=syntax
 "set foldcolumn=0
-" According to the file type loading plug-in
-filetype plugin indent on
 " It is a variety of automatic code completion plugin
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
