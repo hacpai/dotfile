@@ -224,6 +224,12 @@ augroup PrevimSettings
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
+" ctags
+" 正向遍历同名标签
+nmap <Leader>tn :tnext<CR>
+" 反向遍历同名标签
+nmap <Leader>tp :tprevious<CR>
+
 " Set Key Mapping
 " GCC compile and name its .out file
 nmap <C-c><C-c> :!gcc -Wall % -o %:r.out<CR>
