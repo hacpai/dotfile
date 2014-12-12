@@ -53,6 +53,9 @@ Plugin 'sketch.vim'
 Plugin '_jsbeautify'
 Plugin 'FencView.vim'
 Plugin 'txt.vim'
+Plugin 'indexer.tar.gz'
+Plugin 'DfrankUtil'
+Plugin 'vimprj'
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
