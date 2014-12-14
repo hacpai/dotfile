@@ -39,6 +39,8 @@ Plugin 'ap/vim-css-color'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 
