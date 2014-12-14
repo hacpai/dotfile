@@ -42,12 +42,14 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 
-Plugin 'godlygeek/tabular'
+Plugin 'godlygeek/tabular' 
 
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kannokanno/previm'
 
 Plugin 'majutsushi/tagbar'
+
+Plugin 'scrooloose/nerdcommenter'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
