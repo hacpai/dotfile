@@ -41,6 +41,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
+Plugin 'aperezdc/vim-template'
 Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 
