@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ysm"
+ZSH_THEME="clean"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,7 +45,7 @@ ZSH_THEME="ysm"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+plugins=(git zsh_reload colored-man colorize github jira vagrant virtualenv pip python brew  brew-cask osx zsh-syntax-highlighting autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,6 +79,8 @@ export PATH="./node_modules/.bin:/Users/MasterMac/.rvm/gems/ruby-2.1.2/bin:/User
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="gls --color=auto"
+alias upgrade_brew_cask="brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup"
+
 # LS colors, made with http://geoff.greer.fm/lscolors/
 #eval `gdircolors ~/dotfile/dircolors-solarized.256dark`
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
@@ -94,7 +96,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40
  
 #export LANG="en_US.UTF-8"
 #export PATH="/usr/games:/usr/local/bin:$PATH"
-
 cmd_sed="$(command -v gsed)" || cmd_sed=sed
 cmd_lolcat="$(command -v lolcat_m)" || cmd_lolcat="$(command -v lolcat)"
 SaySomething=$(fortune -a -s | $cmd_sed -E "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g")
