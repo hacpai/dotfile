@@ -287,6 +287,9 @@ augroup PrevimSettings
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
+" python-syntax
+let python_highlight_all = 1
+
 " ctags
 " 正向遍历同名标签
 nmap <Leader>tn :tnext<CR>
