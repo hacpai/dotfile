@@ -38,6 +38,8 @@ Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'ap/vim-css-color'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
+Plugin 'hdima/python-syntax'
+
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
@@ -51,6 +53,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'kannokanno/previm'
 
 Plugin 'majutsushi/tagbar'
+Plugin 'kshenoy/vim-signature'
 
 Plugin 'scrooloose/nerdcommenter'
 " plugin from http://vim-scripts.org/vim/scripts.html
