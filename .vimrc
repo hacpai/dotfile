@@ -290,6 +290,9 @@ augroup END
 " python-syntax
 let python_highlight_all = 1
 
+" vim-template
+let g:templates_directory = '/Users/MasterMac/dotfile'
+
 " ctags
 " 正向遍历同名标签
 nmap <Leader>tn :tnext<CR>
