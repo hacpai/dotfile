@@ -46,6 +46,7 @@ Plugin 'Shougo/neosnippet-snippets'
 Plugin 'aperezdc/vim-template'
 Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'spiiph/vim-space'
 
 Plugin 'godlygeek/tabular' 
 
