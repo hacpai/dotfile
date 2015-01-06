@@ -49,6 +49,8 @@ Plugin 'Lokaltog/vim-easymotion'
 
 Plugin 'godlygeek/tabular' 
 
+Plugin  'junegunn/goyo.vim'
+
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kannokanno/previm'
 
