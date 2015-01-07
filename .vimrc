@@ -305,6 +305,12 @@ nmap <Leader>tp :tprevious<CR>
 " 默认 --fields=+iaS 不满足 YCM 要求，需改为 --fields=+iaSl
 let g:indexer_ctagsCommandLineOptions="--c-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q"
 
+" gundo.vim
+set undolevels=1000 " How many undos
+set undoreload=10000 " number of lines to save for undo
+set undofile " keep a persistent backup file
+set undodir=/var/tmp/vimundo/
+
 " Set Key Mapping
 " GCC compile and name its .out file
 nmap <C-c><C-c> :!gcc -Wall % -o %:r.out<CR>
