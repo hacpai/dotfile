@@ -371,8 +371,12 @@ set smartindent
 set laststatus=2
 " Smart Tab
 set smarttab
+" Show the command in the status line
+set showcmd
 " Display automatic matching(){}[]
 set showmatch
+" When searching try to be smart about cases 
+set smartcase
 " Types of inspection
 filetype on
 " According to different types of loading corresponding detected plugins
