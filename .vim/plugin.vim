@@ -44,8 +44,10 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'ervandew/supertab'
+
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'spiiph/vim-space'
+Plugin 'gcmt/wildfire.vim'
 
 Plugin 'godlygeek/tabular' 
 
