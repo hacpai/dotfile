@@ -265,6 +265,11 @@ nnoremap <F4> :call g:_Jsbeautify()<CR>
 
 " Gundo.vim
 nnoremap <F5> :GundoToggle<CR>
+set undolevels=1000 " How many undos
+set undoreload=10000 " number of lines to save for undo
+set undofile " keep a persistent backup file
+set undodir=/var/tmp/vimundo/
+
 " 撤销树持久化存储
 try
     set undodir=~/.vim/temp_dirs/undodir
@@ -290,9 +295,6 @@ augroup END
 " python-syntax
 let python_highlight_all = 1
 
-" vim-template
-let g:templates_directory = '/Users/MasterMac/dotfile'
-
 " ctags
 " 正向遍历同名标签
 nmap <Leader>tn :tnext<CR>
@@ -305,11 +307,12 @@ nmap <Leader>tp :tprevious<CR>
 " 默认 --fields=+iaS 不满足 YCM 要求，需改为 --fields=+iaSl
 let g:indexer_ctagsCommandLineOptions="--c-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q"
 
-" gundo.vim
-set undolevels=1000 " How many undos
-set undoreload=10000 " number of lines to save for undo
-set undofile " keep a persistent backup file
-set undodir=/var/tmp/vimundo/
+" wildfire
+" This selects the next closest text object.
+let g:wildfire_fuel_map = "<ENTER>"
+" This selects the previous closest text object.
+let g:wildfire_water_map = "<BS>"
+let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "ip", "it"]
 
 " Set Key Mapping
 " GCC compile and name its .out file
