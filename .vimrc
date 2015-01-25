@@ -21,11 +21,6 @@
 " Vundle is a Vim plugin manager
 source ~/.vim/plugin.vim
 
-" Molokai Color Scheme for Vim
-colorscheme molokai
-let g:molokai_original = 1
-let g:rehash256 = 1
-
 "Rainbow_parentheses.vim
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
@@ -444,3 +439,28 @@ set dir=/var/tmp
 " 这个目录是在 ram 上, 设置了之后 swp文件就在这个文件夹储存.
 " 我用笔记本经常带着在外面写点代码, 设置了 laptop-mode
 " 硬盘20秒空闲就停转, swp 文件放在内存里就防止了 经常写入硬盘的操作
+
+if has("gui_running")
+    set guifont=PragmataPro\ for\ Powerline\:h18
+    winsize 100 40
+    set clipboard+=unnamed
+    set transparency=15 " 透明度
+    set cursorcolumn
+    set hidden
+    set go-=T
+    set bg=dark
+    if &background == "dark"
+        hi normal guibg=black
+        set transp=8
+    endif
+    "set guioptions-=T " 隐藏工具栏
+    "set guioptions-=m " 隐藏菜单栏
+    "set guioptions-=L " 隐藏左侧滚动条
+    "set showtabline=0 " 隐藏Tab栏 ndif
+    "set guioptions-=L" Disable Scrollbar in NERDtree with MacVim
+else
+   " Molokai Color Scheme for Vim
+    colorscheme molokai
+    let g:molokai_original = 1
+    let g:rehash256 = 1
+endif
