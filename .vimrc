@@ -53,7 +53,6 @@ set laststatus=2
 "let g:airline_right_sep='<'
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
-set guifont=Source\ Code\ Pro\ 18
 let g:airline_powerline_fonts = 1
 let g:airline_theme='molokai'
 let g:ariline_enable_branch=1
@@ -444,14 +443,12 @@ if has("gui_running")
     set guifont=PragmataPro\ for\ Powerline\:h18
     winsize 100 40
     set clipboard+=unnamed
-    set transparency=15 " 透明度
     set cursorcolumn
     set hidden
     set go-=T
-    set bg=dark
     if &background == "dark"
         hi normal guibg=black
-        set transp=8
+        set transp=16
     endif
     "set guioptions-=T " 隐藏工具栏
     "set guioptions-=m " 隐藏菜单栏
@@ -463,4 +460,5 @@ else
     colorscheme molokai
     let g:molokai_original = 1
     let g:rehash256 = 1
+    set bg=dark
 endif
