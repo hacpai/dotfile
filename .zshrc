@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="clean"
+ZSH_THEME="apple"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,7 +45,7 @@ ZSH_THEME="clean"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh_reload colored-man colorize github jira vagrant virtualenv pip python brew  brew-cask osx zsh-syntax-highlighting autojump)
+plugins=(git zsh_reload colored-man colorize github jira vagrant virtualenv pip python brew  brew-cask osx zsh-syntax-highlighting z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,7 +79,7 @@ export PATH="./node_modules/.bin:/Users/MasterMac/.rvm/gems/ruby-2.1.2/bin:/User
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="gls --color=auto"
-alias upgrade_brew_cask="brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup"
+alias upgrade_brew_cask="brew update && brew cleanup && brew cask cleanup && brew upgrade brew-cask"
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
 #eval `gdircolors ~/dotfile/dircolors-solarized.256dark`
