@@ -1,10 +1,13 @@
-
 #for color
 export CLICOLOR=1
 if [ -f ~/.git-prompt.sh ]; then
   source ~/.git-prompt.sh
+  # Pro Tango
   export PS1='\n\[\e[0;30m\]┌─\[\e[0m\]\[\e[01;30m\]\u@\h\[\e[00m\]:\[\e[01;34m\]\w\[\e[00m\]\n\[\e[0;30m\]└───\[\e[0m\]\$ \[\e[00;33m\]$(__git_ps1 "(%s)")\[\e[00m\] '
 fi
+
+# Silver Aerogel 
+#export PS1='\[\033[01;33m\]\u@\h\[\033[01;31m\] \W\$\[\033[00m\] '
 
 #for brew
 if brew list | grep coreutils > /dev/null ; then
