@@ -461,8 +461,9 @@ else
     "let g:molokai_original = 1
     let g:rehash256 = 1
     set bg=dark
+    let g:gruvbox_italic=0
     " Gruvbox Color Scheme for Vim
-    "colorscheme gruvbox
+    colorscheme gruvbox
     " Hybird Color Scheme for Vim
-    colorscheme hybrid
+    "colorscheme hybrid
 endif
