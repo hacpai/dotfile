@@ -456,11 +456,13 @@ if has("gui_running")
     "set showtabline=0 " 隐藏Tab栏 ndif
     "set guioptions-=L" Disable Scrollbar in NERDtree with MacVim
 else
-   " Molokai Color Scheme for Vim
+    " Molokai Color Scheme for Vim
     "colorscheme molokai
     "let g:molokai_original = 1
     let g:rehash256 = 1
     set bg=dark
-   " Gruvbox Color Scheme for Vim
-    colorscheme gruvbox
+    " Gruvbox Color Scheme for Vim
+    "colorscheme gruvbox
+    " Hybird Color Scheme for Vim
+    colorscheme hybrid
 endif
