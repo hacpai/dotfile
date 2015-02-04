@@ -13,17 +13,25 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+
+" vim colorscheme
 Plugin 'tomasr/molokai'
+Plugin 'morhetz/gruvbox'
+
+
 Plugin 'rainbow_parentheses.vim'
 Plugin 'bling/vim-airline'
 Plugin 'Yggdroot/indentLine'
 
+
 Plugin 'asins/vimcdoc'
 Plugin 'TimothyYe/vim-tips'
+
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'sjl/gundo.vim'
+
 
 " HTML/JS/JQUERY/CSS
 Plugin 'othree/html5.vim'
@@ -38,26 +46,34 @@ Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'ap/vim-css-color'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
+
 Plugin 'hdima/python-syntax'
+
 
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'ervandew/supertab'
 
+
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'spiiph/vim-space'
 Plugin 'gcmt/wildfire.vim'
 
+
 Plugin 'godlygeek/tabular' 
 
+
 Plugin  'junegunn/goyo.vim'
+
 
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kannokanno/previm'
 
+
 Plugin 'majutsushi/tagbar'
 Plugin 'kshenoy/vim-signature'
+
 
 Plugin 'scrooloose/nerdcommenter'
 " plugin from http://vim-scripts.org/vim/scripts.html
