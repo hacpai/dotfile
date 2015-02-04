@@ -457,8 +457,10 @@ if has("gui_running")
     "set guioptions-=L" Disable Scrollbar in NERDtree with MacVim
 else
    " Molokai Color Scheme for Vim
-    colorscheme molokai
-    let g:molokai_original = 1
+    "colorscheme molokai
+    "let g:molokai_original = 1
     let g:rehash256 = 1
     set bg=dark
+   " Gruvbox Color Scheme for Vim
+    colorscheme gruvbox
 endif
