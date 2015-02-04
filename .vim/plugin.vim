@@ -17,6 +17,7 @@ Plugin 'gmarik/Vundle.vim'
 " vim colorscheme
 Plugin 'tomasr/molokai'
 Plugin 'morhetz/gruvbox'
+Plugin 'w0ng/vim-hybrid'
 
 
 Plugin 'rainbow_parentheses.vim'
