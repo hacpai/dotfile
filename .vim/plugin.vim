@@ -77,6 +77,8 @@ Plugin 'kshenoy/vim-signature'
 
 
 Plugin 'scrooloose/nerdcommenter'
+
+Plugin 'wakatime/vim-wakatime'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
