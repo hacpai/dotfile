@@ -11,6 +11,7 @@
 	email = david.malan@aol.com
 [core]
 	excludesfile = /Users/MasterMac/.gitignore_global
+    gitproxy = proxy-wrapper
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -20,3 +21,6 @@
 [push]
 	default = simple
 [http]
+    proxy = socks5://127.0.0.1:1080
+[https]
+    proxy = socks5://127.0.0.1:1080
