@@ -42,3 +42,5 @@ if [ "$1" == "" ] && [[ -z $(ps aux |grep wireshark |grep -v grep) ]]; then
 	exit 0
 fi
 
+# Bash Completion
+source /usr/local/etc/bash_completion
