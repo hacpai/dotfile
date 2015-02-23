@@ -52,7 +52,7 @@ au Syntax * RainbowParenthesesLoadBraces
 "let g:airline_right_sep='<'
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
-let g:airline_powerline_fonts=0 
+let g:airline_powerline_fonts=1
 let g:airline_theme='molokai'
 let g:airline#extensions#syntastic#enabled=1
 "let  g:airline_section_b = '%{strftime("%c")}'
@@ -286,6 +286,21 @@ augroup END
 
 " python-syntax
 let python_highlight_all = 1
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers=['flake8', 'pylint', 'pyflake', 'pylama']
+"let g:syntastic_error_symbol = '✗'
+"let g:syntastic_warning_symbol = '⚠'
+"let g:syntastic_enable_highlighting = 0
+"let g:syntastic_mode_map = { 'passive_filetypes': ['scss', 'slim'] }
 
 " ctags
 " 正向遍历同名标签
