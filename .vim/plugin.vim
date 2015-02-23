@@ -48,7 +48,10 @@ Plugin 'ap/vim-css-color'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 
+" Python
 Plugin 'hdima/python-syntax'
+Plugin 'kevinw/pyflakes-vim'
+Plugin 'scrooloose/syntastic'
 
 
 Plugin 'Shougo/neocomplete.vim'
