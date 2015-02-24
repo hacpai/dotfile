@@ -52,6 +52,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'hdima/python-syntax'
 Plugin 'kevinw/pyflakes-vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'tell-k/vim-autopep8'
 
 
 Plugin 'Shougo/neocomplete.vim'
