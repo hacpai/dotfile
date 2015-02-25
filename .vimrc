@@ -325,12 +325,12 @@ let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "ip", "it"]
 " GCC compile and name its .out file
 nmap <C-c><C-c> :!gcc -Wall % -o %:r.out<CR>
 " Tab and Shift-Tab do indent
-nmap <tab> v>
-nmap <s-tab> v<
+nmap <tab> >>
+nmap <s-tab> <<
 vmap <tab> >gv
 vmap <s-tab> <gv
 " "jj"instead of <ESC>
-imap jj <esc>
+inoremap jj <ESC>
 " <F2> insert time
 imap <F2> <C-R>=strftime("ec")<CR>
 " <F3> call ToggleSketch
