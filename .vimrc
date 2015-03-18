@@ -53,6 +53,7 @@ au Syntax * RainbowParenthesesLoadBraces
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_powerline_fonts=1
+let g:airline_powerline_symbols='unicode'
 let g:airline_theme='molokai'
 let g:airline#extensions#syntastic#enabled=1
 "let  g:airline_section_b = '%{strftime("%c")}'
