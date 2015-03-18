@@ -51,7 +51,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Python
 Plugin 'hdima/python-syntax'
 Plugin 'kevinw/pyflakes-vim'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'tell-k/vim-autopep8'
 
 
@@ -83,6 +83,7 @@ Plugin 'kshenoy/vim-signature'
 Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'wakatime/vim-wakatime'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
