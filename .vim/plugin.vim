@@ -76,6 +76,9 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'kannokanno/previm'
 
 
+Plugin 'xu-cheng/brew.vim'
+
+
 Plugin 'majutsushi/tagbar'
 Plugin 'kshenoy/vim-signature'
 
