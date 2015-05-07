@@ -45,7 +45,7 @@ ZSH_THEME="apple"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autopep8 git zsh_reload colored-man colorize github jira vagrant virtualenv pip python brew brew-cask osx zsh-syntax-highlighting z command-not-found common-aliases git-prompt git-remote-branch gitignore osx profiles themes terminalapp emoji-clock) 
+plugins=(autopep8 git zsh_reload colored-man colorize github jira vagrant virtualenv pip python brew brew-cask osx zsh-syntax-highlighting z command-not-found common-aliases git-prompt git-remote-branch gitignore osx profiles themes terminalapp emoji-clock zsh-autosuggestions) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,3 +104,17 @@ cowsay $SaySomething | $cmd_lolcat -f
 printf "\n"
 
 
+
+# Setup zsh-autosuggestions
+source /Users/MasterMac/.zsh-autosuggestions/autosuggestions.zsh
+
+# Enable autosuggestions automatically
+zle-line-init() {
+    zle autosuggest-start
+}
+
+zle -N zle-line-init
+
+# use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
+# zsh-autosuggestions is designed to be unobtrusive)
+bindkey '^T' autosuggest-toggle
