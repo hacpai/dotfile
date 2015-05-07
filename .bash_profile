@@ -1,3 +1,8 @@
+# for thefuck
+alias fuck='eval $(thefuck $(fc -ln -1))'
+# You can use whatever you want as an alias, like for Mondays:
+alias FUCK='fuck'
+
 #for color
 export CLICOLOR=1
 if [ -f ~/.git-prompt.sh ]; then
