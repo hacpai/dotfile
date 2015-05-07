@@ -118,3 +118,6 @@ zle -N zle-line-init
 # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
 # zsh-autosuggestions is designed to be unobtrusive)
 bindkey '^T' autosuggest-toggle
+
+# For thefuck
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
