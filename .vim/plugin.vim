@@ -53,6 +53,7 @@ Plugin 'hdima/python-syntax'
 Plugin 'kevinw/pyflakes-vim'
 "Plugin 'scrooloose/syntastic'
 Plugin 'tell-k/vim-autopep8'
+Plugin 'davidhalter/jedi-vim'
 
 
 Plugin 'Shougo/neocomplete.vim'
