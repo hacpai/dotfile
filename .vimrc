@@ -4,7 +4,7 @@
 "                        \ V /| | | | | | | | | (__
 "                       (_)_/ |_|_| |_| |_|_|  \___|
 "
-" Author: arcticlion <david.malan@aol.com>
+" Author: arcticlion <iomniscience@icloud.com>
 " Source: http://github.com/arcticlion/dotfiles/tree/master/vim
 "
 " This file is under a lot of stress, it changes frequently, so it's better if
