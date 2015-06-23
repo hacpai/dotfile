@@ -62,6 +62,9 @@ Plugin 'Shougo/neosnippet-snippets'
 Plugin 'ervandew/supertab'
 
 
+Plugin 'fatih/vim-go'
+
+
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'spiiph/vim-space'
 Plugin 'gcmt/wildfire.vim'
