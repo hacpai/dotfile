@@ -271,6 +271,9 @@ let g:tagbar_type_go = {
 \ }
 " ========================================================================
 
+" vim-go-extra
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
 " Vim-easymotion
 let mapleader=";"
 let g:EasyMotion_smartcase = 0
