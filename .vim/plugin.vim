@@ -63,6 +63,7 @@ Plugin 'ervandew/supertab'
 
 
 Plugin 'fatih/vim-go'
+Plugin 'vim-jp/vim-go-extra'
 
 
 Plugin 'Lokaltog/vim-easymotion'
