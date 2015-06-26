@@ -7,8 +7,10 @@
 [color "diff"]
 	meta = blue black bold
 [user]
-	name = henry-zhuang
-	email = mountainsea@outlook.com
+    name = henry-zhuang
+    ;name = shixi_wenhui
+    email = mountainsea@outlook.com
+    ;email = shixi_wenhui@staff.weibo.com
 [core]
 	excludesfile = /Users/MasterMac/.gitignore_global
     gitproxy = proxy-wrapper
@@ -20,7 +22,7 @@
 	trustExitCode = true
 [push]
 	default = matching
-[http]
-    proxy = socks5://127.0.0.1:1080
-[https]
-    proxy = socks5://127.0.0.1:1080
+;[http]
+    ;proxy = socks5://127.0.0.1:1080
+;[https]
+    ;proxy = socks5://127.0.0.1:1080
