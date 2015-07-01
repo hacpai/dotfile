@@ -92,6 +92,8 @@ Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'wakatime/vim-wakatime'
 
+Plugin 'dag/vim-fish'
+
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
