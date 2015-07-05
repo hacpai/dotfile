@@ -26,5 +26,7 @@
     ;proxy = socks5://127.0.0.1:1080
 ;[https]
     ;proxy = socks5://127.0.0.1:1080
+;[credential]
+	;helper = store
 [credential]
-	helper = store
+	helper = osxkeychain
