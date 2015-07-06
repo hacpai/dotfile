@@ -1,5 +1,4 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -90,7 +89,14 @@ Plugin 'kshenoy/vim-signature'
 
 Plugin 'scrooloose/nerdcommenter'
 
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'jistr/vim-nerdtree-tabs'
+
+
 Plugin 'wakatime/vim-wakatime'
+
 
 Plugin 'dag/vim-fish'
 
