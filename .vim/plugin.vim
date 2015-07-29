@@ -53,6 +53,7 @@ Plugin 'kevinw/pyflakes-vim'
 "Plugin 'scrooloose/syntastic'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'klen/python-mode'
 
 
 Plugin 'Shougo/neocomplete.vim'
@@ -93,12 +94,14 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
 
 
 Plugin 'wakatime/vim-wakatime'
 
 
 Plugin 'dag/vim-fish'
+
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
