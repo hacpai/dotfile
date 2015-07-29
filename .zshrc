@@ -124,3 +124,6 @@ alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 # THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+# boot2docker TLS support
+eval "$(boot2docker shellinit)"
