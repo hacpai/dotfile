@@ -102,6 +102,7 @@ Plugin 'wakatime/vim-wakatime'
 
 Plugin 'dag/vim-fish'
 
+Plugin 'rodjek/vim-puppet'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
