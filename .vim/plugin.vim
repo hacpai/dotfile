@@ -17,32 +17,25 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tomasr/molokai'
 Plugin 'morhetz/gruvbox'
 Plugin 'w0ng/vim-hybrid'
-
-
+" highlight parentheses
 Plugin 'rainbow_parentheses.vim'
+" light status/tabline
 Plugin 'bling/vim-airline'
+" displaying thin vertical lines at each indentation level
 Plugin 'Yggdroot/indentLine'
-
-
+" Chinese vimcdoc
 Plugin 'asins/vimcdoc'
+" vim-tips
 Plugin 'TimothyYe/vim-tips'
-
-
+" use git command with vim
 Plugin 'tpope/vim-fugitive'
+" shows a git diff in the gutter
 Plugin 'airblade/vim-gitgutter'
+" Graph your Vim undo tree in style
 Plugin 'sjl/gundo.vim'
-
-
-" HTML/JS/JQUERY/CSS
-Plugin 'othree/html5.vim'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'nono/jquery.vim'
-Plugin 'elzr/vim-json'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'groenewege/vim-less'
+" css/less/sass/html color preview for vim
 Plugin 'gorodinskiy/vim-coloresque'
+" Highlight colors in css files
 Plugin 'ap/vim-css-color'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
@@ -95,6 +88,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
+Plugin 'dyng/ctrlsf.vim'
 
 
 Plugin 'wakatime/vim-wakatime'
