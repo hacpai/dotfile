@@ -15,6 +15,7 @@
 	excludesfile = /Users/MasterMac/.gitignore_global
     gitproxy = proxy-wrapper
     autocrlf = input
+    editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
