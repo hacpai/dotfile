@@ -100,10 +100,6 @@ set helplang=cn
 " Supertab default indent
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
-" Vim-javascript provides syntax and indent
-let javascript_enable_domhtmlcss = 1
-let javascript_conceal = 1
-
 " Tabular
 let mapleader=','
 if exists(":Tabularize")
@@ -316,9 +312,6 @@ nmap S <Plug>(easymotion-s2)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>k <Plug>(easymotion-k)
-
-" __jsbeautify
-nnoremap <F4> :call g:_Jsbeautify()<CR>
 
 " Gundo.vim
 nnoremap <F5> :GundoToggle<CR>
@@ -543,7 +536,8 @@ set nofoldenable
 " It is a variety of automatic code completion plugin
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+au FileType javascript call JavaScriptFold()
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
