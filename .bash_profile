@@ -49,4 +49,3 @@ fi
 
 # Bash Completion
 source /usr/local/etc/bash_completion
-eval "$(boot2docker shellinit)"
