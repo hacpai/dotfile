@@ -372,43 +372,43 @@ nmap <Leader>tp :tprevious<CR>
 " 默认 --fields=+iaS 不满足 YCM 要求，需改为 --fields=+iaSl
 let g:indexer_ctagsCommandLineOptions="--c-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q"
 
-"NERDtree
-" 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
-"nmap <Leader>fl :NERDTreeToggle<CR>
-" 设置NERDTree子窗口宽度
-let NERDTreeWinSize=32
-" 设置NERDTree子窗口位置
-let NERDTreeWinPos="right"
-" 显示隐藏文件
-let NERDTreeShowHidden=1
-" NERDTree 子窗口中不显示冗余帮助信息
-"let NERDTreeMinimalUI=1
-" 删除文件时自动删除文件对应 buffer
-let NERDTreeAutoDeleteBuffer=1
-" 当打开 NERDTree 窗口时，自动显示 Bookmarks
-let NERDTreeShowBookmarks=1
-" open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree %
-autocmd VimEnter * wincmd w
-" NERDTress File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
+""NERDtree
+"" 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
+""nmap <Leader>fl :NERDTreeToggle<CR>
+"" 设置NERDTree子窗口宽度
+"let NERDTreeWinSize=32
+"" 设置NERDTree子窗口位置
+"let NERDTreeWinPos="right"
+"" 显示隐藏文件
+"let NERDTreeShowHidden=1
+"" NERDTree 子窗口中不显示冗余帮助信息
+""let NERDTreeMinimalUI=1
+"" 删除文件时自动删除文件对应 buffer
+"let NERDTreeAutoDeleteBuffer=1
+"" 当打开 NERDTree 窗口时，自动显示 Bookmarks
+"let NERDTreeShowBookmarks=1
+"" open a NERDTree automatically when vim starts up
+"autocmd vimenter * NERDTree %
+"autocmd VimEnter * wincmd w
+"" NERDTress File highlighting
+"function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ "exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ "exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+"endfunction
 
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+"call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+"call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+"call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+"call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+"call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+"call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+"call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+"call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+"call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+"call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+"call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+"call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+"call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " wildfire
 " This selects the next closest text object.
@@ -536,8 +536,7 @@ set nofoldenable
 " It is a variety of automatic code completion plugin
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-au FileType javascript call JavaScriptFold()
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags

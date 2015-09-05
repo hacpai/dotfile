@@ -37,6 +37,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'gorodinskiy/vim-coloresque'
 " Highlight colors in css files
 Plugin 'ap/vim-css-color'
+" quick write html
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 
@@ -61,12 +62,13 @@ Plugin 'vim-jp/vim-go-extra'
 
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'spiiph/vim-space'
+" Smart selection of the closest text object
 Plugin 'gcmt/wildfire.vim'
 
-
+"  Aligning Text
 Plugin 'godlygeek/tabular' 
 
-
+" Distraction-free writing
 Plugin  'junegunn/goyo.vim'
 
 
@@ -80,13 +82,10 @@ Plugin 'xu-cheng/brew.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'kshenoy/vim-signature'
 
-
+" quick comment
 Plugin 'scrooloose/nerdcommenter'
 
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'dyng/ctrlsf.vim'
 
@@ -101,13 +100,13 @@ Plugin 'rodjek/vim-puppet'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'sketch.vim'
-Plugin '_jsbeautify'
 Plugin 'FencView.vim'
+" about edit text
 Plugin 'txt.vim'
+" Auto-generate tags
 Plugin 'indexer.tar.gz'
 Plugin 'DfrankUtil'
 Plugin 'vimprj'
-Plugin 'a.vim'
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
