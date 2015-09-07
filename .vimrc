@@ -461,6 +461,8 @@ cnoremap <esc><c-f> <s-right>
 " vim default setting
 " 关闭兼容模式
 set nocompatible
+" history : how many lines of history VIM has to remember
+set history=2000
 " vim 自身命令行模式智能补全
 set wildmenu
 " Opening line number
@@ -485,10 +487,14 @@ set laststatus=2
 set smarttab
 " Show the command in the status line
 set showcmd
+" display current modes
+set showmode
 " Display automatic matching(){}[]
 set showmatch
 " When searching try to be smart about cases 
 set smartcase
+" tenths of a second to show the matching parenthesis
+set matchtime=2
 " Types of inspection
 filetype on
 " According to different types of loading corresponding detected plugins
@@ -502,9 +508,15 @@ set autowrite
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
+" show location
 set cursorline 
 set cursorcolumn
+" For regular expressions turn magic on
 set magic
+" change the terminal's title
+set title
+" keep 3 lines when scrolling
+set scrolloff=7                 
 " 开启实时搜索功能
 set incsearch
 " Ignore case-insensitive during searching
@@ -513,6 +525,12 @@ set ignorecase
 set hlsearch
 " 文件在Vim之外修改过，自动重新读入
 set autoread
+" select & complete
+set selection=inclusive
+set selectmode=mouse,key
+set completeopt=longest,menu
+set wildmode=longest,list,full
+set wildignore=*.o,*~,*.pyc,*.class
 
 " Open code indent
 " 自适应不同语言的智能缩进
