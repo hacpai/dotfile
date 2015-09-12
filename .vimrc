@@ -422,8 +422,6 @@ if $SHELL =~ 'fish'
   set shell='/bin/sh'
 endif
 
-" pythom-mode
-let g:pymode_rope = 0
 
 " Set Key Mapping
 " GCC compile and name its .out file

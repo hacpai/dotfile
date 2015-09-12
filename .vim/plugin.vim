@@ -47,7 +47,6 @@ Plugin 'kevinw/pyflakes-vim'
 "Plugin 'scrooloose/syntastic'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'klen/python-mode'
 
 
 Plugin 'Shougo/neocomplete.vim'
