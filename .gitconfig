@@ -9,7 +9,8 @@
 [user]
     name = hacpai
     ;name = shixi_wenhui
-    email = mountainsea@outlook.com
+    ;email = mountainsea@outlook.com
+    email = balckwing@gmail.com
     ;email = shixi_wenhui@staff.weibo.com
 [core]
 	excludesfile = /Users/MasterMac/.gitignore_global
