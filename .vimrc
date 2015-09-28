@@ -229,6 +229,7 @@ if has('conceal')
 endif
 " tagbar
 " ========================================================================
+let g:tagbar_autofocus=1
 " 设置 tagbar 子窗口的位置出现在主编辑区的左边 
 let tagbar_left=1 
 " 设置显示／隐藏标签列表子窗口的快捷键。速记：tag list 
@@ -354,7 +355,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 "let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers=['flake8', 'pylint', 'pyflake', 'pylama']
+let g:syntastic_python_checkers=['pyflakes']
 "let g:syntastic_error_symbol = '✗'
 "let g:syntastic_warning_symbol = '⚠'
 "let g:syntastic_enable_highlighting = 0
@@ -422,6 +423,14 @@ if $SHELL =~ 'fish'
   set shell='/bin/sh'
 endif
 
+" CtrlPFunky
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+let g:ctrlp_funky_matchtype = 'path'
+let g:ctrlp_funky_syntax_highlight = 1
+let g:ctrlp_extensions = ['funky']
+
 
 " Set Key Mapping
 " GCC compile and name its .out file
@@ -456,6 +465,7 @@ cnoremap <c-n> <down>
 cnoremap <c-p> <up>
 cnoremap <esc><c-b> <s-left>
 cnoremap <esc><c-f> <s-right>
+
 
 " The Base Setting
 " vim default setting

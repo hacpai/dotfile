@@ -87,6 +87,7 @@ Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'dyng/ctrlsf.vim'
+Plugin 'tacahiroy/ctrlp-funky'
 
 
 Plugin 'wakatime/vim-wakatime'
