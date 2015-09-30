@@ -52,7 +52,10 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
+Plugin 'osyo-manga/vim-marching'
+Plugin 'Shougo/vimproc.vim'
 
 
 Plugin 'fatih/vim-go'
@@ -71,7 +74,6 @@ Plugin 'godlygeek/tabular'
 Plugin  'junegunn/goyo.vim'
 
 
-Plugin 'plasticboy/vim-markdown'
 Plugin 'kannokanno/previm'
 
 

@@ -223,10 +223,39 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)"
 \: "\<TAB>"
 
+" vim-marching
+let g:marching_clang_command = "clang"
+" オプションを追加する
+" filetype=cpp に対して設定する場合
+let g:marching#clang_command#options = {
+\   "cpp" : "-std=gnu++1y"
+\}
+let g:marching_include_paths = filter(
+  \ split(glob('/usr/include/c++/*'), '\n') +
+  \ split(glob('/usr/include/*/c++/*'), '\n') +
+  \ split(glob('/usr/include/*/'), '\n'),
+  \ 'isdirectory(v:val)')
+" neocomplete.vim と併用して使用する場合
+let g:marching_enable_neocomplete = 1
+if !exists('g:neocomplete#force_omni_input_patterns')
+  let g:neocomplete#force_omni_input_patterns = {}
+endif
+let g:neocomplete#force_omni_input_patterns.cpp =
+    \ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
+" 処理のタイミングを制御する
+" 短いほうがより早く補完ウィンドウが表示される
+" ただし、marching.vim 以外の処理にも影響するので注意する
+set updatetime=200
+" オムニ補完時に補完ワードを挿入したくない場合
+imap <buffer> <C-x><C-o> <Plug>(marching_start_omni_complete)
+" キャッシュを削除してからオムに補完を行う
+imap <buffer> <C-x><C-x><C-o> <Plug>(marching_force_start_omni_complete)
+
 " For snippet_complete marker.
 if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
+
 " tagbar
 " ========================================================================
 let g:tagbar_autofocus=1
@@ -239,7 +268,7 @@ let tagbar_width=32
 " tagbar 子窗口中不显示冗余帮助信息 
 let g:tagbar_compact=1
 " 设置 ctags 对哪些代码元素生成标签
-let g:tagbar_type_c = {
+let g:tagbar_type_cpp = {
     \ 'kinds' : [
         \ 'd:macros:1',
         \ 'g:enums',
