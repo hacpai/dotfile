@@ -396,12 +396,6 @@ nmap <Leader>tn :tnext<CR>
 " 反向遍历同名标签
 nmap <Leader>tp :tprevious<CR>
 
-" indexer
-" 设置插件 indexer 调用 ctags 的参数
-" 默认 --c-kinds=+p+l，重新设置为 --c-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v
-" 默认 --fields=+iaS 不满足 YCM 要求，需改为 --fields=+iaSl
-let g:indexer_ctagsCommandLineOptions="--c-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q"
-
 ""NERDtree
 "" 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
 ""nmap <Leader>fl :NERDTreeToggle<CR>
