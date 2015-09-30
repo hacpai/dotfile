@@ -80,12 +80,17 @@ Plugin 'kannokanno/previm'
 Plugin 'xu-cheng/brew.vim'
 
 
+Plugin 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
+
+
 Plugin 'majutsushi/tagbar'
 Plugin 'kshenoy/vim-signature'
 
 " quick comment
 Plugin 'scrooloose/nerdcommenter'
 
+" Auto-generate tags
+Plugin 'szw/vim-tags'
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'dyng/ctrlsf.vim'
@@ -105,10 +110,6 @@ Plugin 'sketch.vim'
 Plugin 'FencView.vim'
 " about edit text
 Plugin 'txt.vim'
-" Auto-generate tags
-Plugin 'indexer.tar.gz'
-Plugin 'DfrankUtil'
-Plugin 'vimprj'
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
