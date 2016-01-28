@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="roamlog"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -50,8 +50,7 @@ plugins=(autopep8 git zsh_reload colored-man colorize github vagrant virtualenv 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export PATH="./node_modules/.bin:/Users/MasterMac/.rvm/gems/ruby-2.1.2/bin:/Users/MasterMac/.rvm/gems/ruby-2.1.2@global/bin:/Users/MasterMac/.rvm/rubies/ruby-2.1.2/bin:/usr/local/opt/coreutils/libexec/gnubin:/Users/MasterMac/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -78,7 +77,7 @@ export PATH="./node_modules/.bin:/Users/MasterMac/.rvm/gems/ruby-2.1.2/bin:/User
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="gls --color=auto"
+#alias ls="gls --color=auto"
 alias upgrade_brew_cask="brew update && brew cleanup && brew cask cleanup && brew upgrade brew-cask"
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
@@ -103,25 +102,19 @@ cowsay $SaySomething | $cmd_lolcat -f
 
 printf "\n"
 
-
-
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 # Setup zsh-autosuggestions
-source /Users/MasterMac/.zsh-autosuggestions/autosuggestions.zsh
+#source ~/.zsh-autosuggestions/autosuggestions.zsh
 
 # Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-
-zle -N zle-line-init
+#zle-line-init() {
+    #zle autosuggest-start
+#}
+#zle -N zle-line-init
 
 # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
 # zsh-autosuggestions is designed to be unobtrusive)
-bindkey '^T' autosuggest-toggle
+#bindkey '^T' autosuggest-toggle
 
-# For thefuck
-alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
-
-# THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
+# SET the GOPATH
+export GOPATH=$HOME/gospace

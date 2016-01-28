@@ -75,6 +75,7 @@ Plugin  'junegunn/goyo.vim'
 
 
 Plugin 'kannokanno/previm'
+Plugin 'othree/xml.vim' 
 
 
 Plugin 'xu-cheng/brew.vim'
@@ -97,7 +98,7 @@ Plugin 'dyng/ctrlsf.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 
 
-Plugin 'wakatime/vim-wakatime'
+"Plugin 'wakatime/vim-wakatime'
 
 
 Plugin 'dag/vim-fish'

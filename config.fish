@@ -5,10 +5,7 @@ set -g OMF_PATH $HOME/.local/share/omf
 set -g OMF_CONFIG $HOME/.config/omf
 
 # Path to your z configuration.
-set -g Z_SCRIPT_PATH /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
-
-# Only display the folder name
-set -g theme_short_path yes
+set -g Z_SCRIPT_PATH /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 
 ### Configuration required to load oh-my-fish ###
 # Note: Only add configurations that are required to be set before oh-my-fish is loaded.
@@ -17,3 +14,6 @@ set -g theme_short_path yes
 
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
+
+# SET the GOPATH
+export GOPATH=$HOME/gospace
