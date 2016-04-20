@@ -87,21 +87,21 @@ let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_powerline_fonts=1
 let g:airline_powerline_symbols='unicode'
-let g:airline_theme='molokai'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#syntastic#enabled=1
 "let  g:airline_section_b = '%{strftime("%c")}'
 "let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline#extensions#tavline#enabled=1
 
 " Vim Chinese Documentation
-let helptags = $VIM."/vimcdoc/doc"
+let g:helptags = $VIM."/vimcdoc/doc"
 set helplang=cn
 
 " Supertab default indent
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
 " Tabular
-let mapleader=','
+let g:mapleader=','
 if exists(":Tabularize")
     nmap <Leader>a= :Tabularize /=<CR>
     vmap <Leader>a= :Tabularize /=<CR>
@@ -260,11 +260,11 @@ endif
 " ========================================================================
 let g:tagbar_autofocus=1
 " 设置 tagbar 子窗口的位置出现在主编辑区的左边 
-let tagbar_left=1 
+let g:tagbar_left=1 
 " 设置显示／隐藏标签列表子窗口的快捷键。速记：tag list 
 nnoremap <F8> :TagbarToggle<CR> 
 " 设置标签子窗口的宽度 
-let tagbar_width=32 
+let g:tagbar_width=32 
 " tagbar 子窗口中不显示冗余帮助信息 
 let g:tagbar_compact=1
 " 设置 ctags 对哪些代码元素生成标签
@@ -334,7 +334,7 @@ let g:tagbar_type_go = {
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " Vim-easymotion
-let mapleader=";"
+let g:mapleader=";"
 let g:EasyMotion_smartcase = 0
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 nmap s <Plug>(easymotion-s)
@@ -373,7 +373,7 @@ augroup PrevimSettings
 augroup END
 
 " python-syntax
-let python_highlight_all = 1
+let g:python_highlight_all = 1
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -605,7 +605,6 @@ set dir=/var/tmp
 if has("gui_running")
     set guifont=PragmataPro\ for\ Powerline\:h18
     winsize 100 40
-    set clipboard+=unnamed
     set cursorcolumn
     set hidden
     set go-=T
