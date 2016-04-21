@@ -53,42 +53,65 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'artur-shaik/vim-javacomplete2'
 
 
+" General complete
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/neoinclude.vim'
+Plugin 'Shougo/neco-vim'
+Plugin 'Shougo/neco-syntax'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
-Plugin 'osyo-manga/vim-marching'
 Plugin 'Shougo/vimproc.vim'
+
 
 " Go
 Plugin 'fatih/vim-go'
 Plugin 'vim-jp/vim-go-extra'
 
 
+" JavaScript
+Plugin 'ternjs/tern_for_vim', {'do': 'npm install'}
+
+
+" C
+Plugin 'Rip-Rip/clang_complete'
+
+
+" unit-git-log
+Plugin 'Shougo/unite.vim'
+Plugin 'chemzqm/vim-easygit'
+Plugin 'chemzqm/unite-git-log'
+
+
+" Motion
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'spiiph/vim-space'
 " Smart selection of the closest text object
 Plugin 'gcmt/wildfire.vim'
 
+
 "  Aligning Text
 Plugin 'godlygeek/tabular' 
+
 
 " Distraction-free writing
 Plugin  'junegunn/goyo.vim'
 
 
-Plugin 'kannokanno/previm'
-Plugin 'othree/xml.vim' 
-
-
-Plugin 'xu-cheng/brew.vim'
-
-
-Plugin 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
+" highlights the enclosing html/xml tags
+Plugin 'Valloric/MatchTagAlways'
 
 
 Plugin 'majutsushi/tagbar'
+" A simple file navigator
+Plugin 'ctrlpvim/ctrlp.vim'
+"Search and Explore
+Plugin 'dyng/ctrlsf.vim'
+" A simple function navigator
+Plugin 'tacahiroy/ctrlp-funky'
+
+" toggle, display and navigate marks
 Plugin 'kshenoy/vim-signature'
 
 " quick comment
@@ -97,17 +120,15 @@ Plugin 'scrooloose/nerdcommenter'
 " Auto-generate tags
 Plugin 'szw/vim-tags'
 
-Plugin 'kien/ctrlp.vim'
-Plugin 'dyng/ctrlsf.vim'
-Plugin 'tacahiroy/ctrlp-funky'
-
-
 "Plugin 'wakatime/vim-wakatime'
 
 
 Plugin 'dag/vim-fish'
-
 Plugin 'rodjek/vim-puppet'
+Plugin 'xu-cheng/brew.vim'
+Plugin 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
+Plugin 'kannokanno/previm'
+
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'

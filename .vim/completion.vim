@@ -1,8 +1,8 @@
 " It is a variety of automatic code completion plugin
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html,markdown set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType java set omnifunc=javacomplete#Complete
@@ -16,37 +16,19 @@ let g:JavaComplete_ImportDefault = 0
 let g:JavaComplete_ImportOrder = ['java.', 'javax.', 'com.', 'org.', 'net.']
 " ========================= }}}
 
-" vim-marching {{{ =======================
-" Async clang code completion.
-
-let g:marching_clang_command = "clang"
-" オプションを追加する
-" filetype=cpp に対して設定する場合
-let g:marching#clang_command#options = {
-\   "cpp" : "-std=gnu++1y"
-\}
-let g:marching_include_paths = filter(
-  \ split(glob('/usr/include/c++/*'), '\n') +
-  \ split(glob('/usr/include/*/c++/*'), '\n') +
-  \ split(glob('/usr/include/*/'), '\n'),
-  \ 'isdirectory(v:val)')
-" neocomplete.vim と併用して使用する場合
-let g:marching_enable_neocomplete = 1
-if !exists('g:neocomplete#force_omni_input_patterns')
-  let g:neocomplete#force_omni_input_patterns = {}
+" clang_complete {{{ ===================================================
+let s:clang_library_path='/Library/Developer/CommandLineTools/usr/lib'
+if isdirectory(s:clang_library_path)
+    let g:clang_library_path=s:clang_library_path
 endif
-let g:neocomplete#force_omni_input_patterns.cpp =
-    \ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
-" 処理のタイミングを制御する
-" 短いほうがより早く補完ウィンドウが表示される
-" ただし、marching.vim 以外の処理にも影響するので注意する
-set updatetime=200
-" オムニ補完時に補完ワードを挿入したくない場合
-imap <buffer> <C-x><C-o> <Plug>(marching_start_omni_complete)
-" キャッシュを削除してからオムに補完を行う
-imap <buffer> <C-x><C-x><C-o> <Plug>(marching_force_start_omni_complete)
+" ===================================================================}}}
 
-" ==================================== }}}
+" tern-for-vim {{{ ========================================
+let tern_show_signature_in_pum = 1
+let tern_show_argument_hints = 'on_hold'
+autocmd FileType javascript setlocal omnifunc=tern#Complete
+autocmd FileType javascript nnoremap <leader>d :TernDef<CR>
+" ====================================================== }}}
 
 " Neocomplete.vim {{{ ======================================================
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
