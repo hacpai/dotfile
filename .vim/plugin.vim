@@ -117,8 +117,6 @@ Plugin 'kshenoy/vim-signature'
 " quick comment
 Plugin 'scrooloose/nerdcommenter'
 
-" Auto-generate tags
-Plugin 'szw/vim-tags'
 
 "Plugin 'wakatime/vim-wakatime'
 
