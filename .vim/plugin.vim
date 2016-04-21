@@ -13,96 +13,20 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
-" vim colorscheme
+" group 'themes'
 Plugin 'tomasr/molokai'
 Plugin 'morhetz/gruvbox'
 Plugin 'w0ng/vim-hybrid'
-" highlight parentheses
-Plugin 'rainbow_parentheses.vim'
-" light status/tabline
+
+" group 'interface'
 Plugin 'bling/vim-airline'
-" displaying thin vertical lines at each indentation level
 Plugin 'Yggdroot/indentLine'
-" Chinese vimcdoc
-Plugin 'asins/vimcdoc'
-" vim-tips
-Plugin 'TimothyYe/vim-tips'
-" use git command with vim
-Plugin 'tpope/vim-fugitive'
-" shows a git diff in the gutter
-Plugin 'airblade/vim-gitgutter'
-" Graph your Vim undo tree in style
-Plugin 'sjl/gundo.vim'
-" css/less/sass/html color preview for vim
-Plugin 'gorodinskiy/vim-coloresque'
-" Highlight colors in css files
-Plugin 'ap/vim-css-color'
-" quick write html
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-
-" Python
-Plugin 'hdima/python-syntax'
-Plugin 'kevinw/pyflakes-vim'
-"Plugin 'scrooloose/syntastic'
-Plugin 'tell-k/vim-autopep8'
-Plugin 'davidhalter/jedi-vim'
-
-
-" Java
-Plugin 'artur-shaik/vim-javacomplete2'
-
-
-" General complete
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'Shougo/neoinclude.vim'
-Plugin 'Shougo/neco-vim'
-Plugin 'Shougo/neco-syntax'
-"Plugin 'Valloric/YouCompleteMe'
-Plugin 'ervandew/supertab'
-Plugin 'Shougo/vimproc.vim'
-
-
-" Go
-Plugin 'fatih/vim-go'
-Plugin 'vim-jp/vim-go-extra'
-
-
-" JavaScript
-Plugin 'ternjs/tern_for_vim', {'do': 'npm install'}
-
-
-" C
-Plugin 'Rip-Rip/clang_complete'
-
-
-" unit-git-log
-Plugin 'Shougo/unite.vim'
-Plugin 'chemzqm/vim-easygit'
-Plugin 'chemzqm/unite-git-log'
-
-
-" Motion
+" group 'motion'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'spiiph/vim-space'
-" Smart selection of the closest text object
-Plugin 'gcmt/wildfire.vim'
 
-
-"  Aligning Text
-Plugin 'godlygeek/tabular' 
-
-
-" Distraction-free writing
-Plugin  'junegunn/goyo.vim'
-
-
-" highlights the enclosing html/xml tags
-Plugin 'Valloric/MatchTagAlways'
-
-
+" group 'explore'
 Plugin 'majutsushi/tagbar'
 " A simple file navigator
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -111,22 +35,87 @@ Plugin 'dyng/ctrlsf.vim'
 " A simple function navigator
 Plugin 'tacahiroy/ctrlp-funky'
 
-" toggle, display and navigate marks
-Plugin 'kshenoy/vim-signature'
-
+" group 'writing'
+"  Aligning Text
+Plugin 'godlygeek/tabular' 
 " quick comment
 Plugin 'scrooloose/nerdcommenter'
 
+" group 'git'
+" use git command with vim
+Plugin 'tpope/vim-fugitive'
+" shows a git diff in the gutter
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Shougo/unite.vim'
+Plugin 'chemzqm/vim-easygit'
+Plugin 'chemzqm/unite-git-log'
 
-"Plugin 'wakatime/vim-wakatime'
+" group 'colorful'
+" highlight parentheses
+Plugin 'rainbow_parentheses.vim'
+" css/less/sass/html color preview for vim
+Plugin 'gorodinskiy/vim-coloresque'
+" Highlight colors in css files
+Plugin 'ap/vim-css-color'
 
+" group 'Python'
+Plugin 'hdima/python-syntax'
+Plugin 'kevinw/pyflakes-vim'
+"Plugin 'scrooloose/syntastic'
+Plugin 'tell-k/vim-autopep8'
+Plugin 'davidhalter/jedi-vim'
 
+" group 'doc'
+" Chinese vimcdoc
+Plugin 'asins/vimcdoc'
+" vim-tips
+Plugin 'TimothyYe/vim-tips'
+
+" group 'html'
+" quick write html
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" group 'Java'
+Plugin 'artur-shaik/vim-javacomplete2'
+
+" group 'complete'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'Shougo/neoinclude.vim'
+Plugin 'Shougo/neco-vim'
+Plugin 'Shougo/neco-syntax'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
+
+" group 'Go'
+Plugin 'fatih/vim-go'
+Plugin 'vim-jp/vim-go-extra'
+
+" group 'JavaScript'
+Plugin 'ternjs/tern_for_vim', {'do': 'npm install'}
+
+" group 'C'
+Plugin 'Rip-Rip/clang_complete'
+
+" group 'highlight'
 Plugin 'dag/vim-fish'
 Plugin 'rodjek/vim-puppet'
 Plugin 'xu-cheng/brew.vim'
 Plugin 'ekalinin/Dockerfile.vim', {'for' : 'Dockerfile'}
 Plugin 'kannokanno/previm'
 
+" group 'function'
+" Graph your Vim undo tree in style
+Plugin 'sjl/gundo.vim'
+Plugin 'Shougo/vimproc.vim'
+" Smart selection of the closest text object
+Plugin 'gcmt/wildfire.vim'
+" Distraction-free writing
+Plugin  'junegunn/goyo.vim'
+" toggle, display and navigate marks
+Plugin 'kshenoy/vim-signature'
+"Plugin 'wakatime/vim-wakatime'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
