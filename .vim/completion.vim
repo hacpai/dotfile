@@ -1,3 +1,53 @@
+" It is a variety of automatic code completion plugin
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType java set omnifunc=javacomplete#Complete
+
+" vim-javacomplete2 {{{ =============
+let g:JavaComplete_UseFQN = 1
+let g:JavaComplete_ServerAutoShutdownTime = 300
+let g:JavaComplete_MavenRepositoryDisable = 0
+let g:JavaComplete_ClosingBrace = 1  
+let g:JavaComplete_ImportDefault = 0
+let g:JavaComplete_ImportOrder = ['java.', 'javax.', 'com.', 'org.', 'net.']
+" ========================= }}}
+
+" vim-marching {{{ =======================
+" Async clang code completion.
+
+let g:marching_clang_command = "clang"
+" オプションを追加する
+" filetype=cpp に対して設定する場合
+let g:marching#clang_command#options = {
+\   "cpp" : "-std=gnu++1y"
+\}
+let g:marching_include_paths = filter(
+  \ split(glob('/usr/include/c++/*'), '\n') +
+  \ split(glob('/usr/include/*/c++/*'), '\n') +
+  \ split(glob('/usr/include/*/'), '\n'),
+  \ 'isdirectory(v:val)')
+" neocomplete.vim と併用して使用する場合
+let g:marching_enable_neocomplete = 1
+if !exists('g:neocomplete#force_omni_input_patterns')
+  let g:neocomplete#force_omni_input_patterns = {}
+endif
+let g:neocomplete#force_omni_input_patterns.cpp =
+    \ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
+" 処理のタイミングを制御する
+" 短いほうがより早く補完ウィンドウが表示される
+" ただし、marching.vim 以外の処理にも影響するので注意する
+set updatetime=200
+" オムニ補完時に補完ワードを挿入したくない場合
+imap <buffer> <C-x><C-o> <Plug>(marching_start_omni_complete)
+" キャッシュを削除してからオムに補完を行う
+imap <buffer> <C-x><C-x><C-o> <Plug>(marching_force_start_omni_complete)
+
+" ==================================== }}}
+
 " Neocomplete.vim {{{ ======================================================
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 
@@ -86,6 +136,45 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " ======================================================================== }}}
 
+"------------------ YouCompleteMe -------------------
+" Linux vim && NeoVim Using YouCompleteMe
+
+"let g:deoplete#enable_at_startup=1
+"let g:ycm_auto_trigger = 0
+"let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+"let g:ycm_collect_identifiers_from_tags_files = 1
+"let g:ycm_min_num_of_chars_for_completion = 9999
+"let g:ycm_add_preview_to_completeopt = 1
+"let g:ycm_use_ultisnips_completer = 1
+"let g:ycm_cache_omnifunc = 1
+"let g:ycm_max_diagnostics_to_display=16
+"let g:ycm_disable_for_files_larger_than_kb = 50000
+"let g:ycm_key_list_select_completion = ['<C-n>', '<C-j>']
+"let g:ycm_key_list_previous_completion = ['<C-p>', '<C-k>']
+"let g:ycm_filetype_blacklist = {
+			"\ 'tagbar' : 1,
+			"\ 'qf' : 1,
+			"\ 'notes' : 1,
+			"\ 'markdown' : 1,
+			"\ 'unite' : 1,
+			"\ 'text' : 1,
+			"\ 'vimwiki' : 1,
+			"\ 'pandoc' : 1,
+			"\ 'infolog' : 1,
+			"\ 'mail' : 1,
+			"\ 'mundo': 1,
+			"\ 'fzf': 1,
+			"\ 'ctrlp' : 1
+			"\}
+
+"let g:ycm_error_symbol = '>>'
+"let g:ycm_warning_symbol = '>*'
+"" Go to Definition variable
+"nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+"nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+"nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+""-------------------------------------------------------
+
 " neosnippet.vim {{{ ================================================
 
 " " Plugin key-mappings.
@@ -114,38 +203,5 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 " =============================================================== }}}
 
-" vim-marching {{{ ================================================
-" Async clang code completion.
-
-let g:marching_clang_command = "clang"
-" オプションを追加する
-" filetype=cpp に対して設定する場合
-let g:marching#clang_command#options = {
-\   "cpp" : "-std=gnu++1y"
-\}
-let g:marching_include_paths = filter(
-  \ split(glob('/usr/include/c++/*'), '\n') +
-  \ split(glob('/usr/include/*/c++/*'), '\n') +
-  \ split(glob('/usr/include/*/'), '\n'),
-  \ 'isdirectory(v:val)')
-" neocomplete.vim と併用して使用する場合
-let g:marching_enable_neocomplete = 1
-if !exists('g:neocomplete#force_omni_input_patterns')
-  let g:neocomplete#force_omni_input_patterns = {}
-endif
-let g:neocomplete#force_omni_input_patterns.cpp =
-    \ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
-" 処理のタイミングを制御する
-" 短いほうがより早く補完ウィンドウが表示される
-" ただし、marching.vim 以外の処理にも影響するので注意する
-set updatetime=200
-" オムニ補完時に補完ワードを挿入したくない場合
-imap <buffer> <C-x><C-o> <Plug>(marching_start_omni_complete)
-" キャッシュを削除してからオムに補完を行う
-imap <buffer> <C-x><C-x><C-o> <Plug>(marching_force_start_omni_complete)
-
-" =============================================================== }}}
-
 " Supertab default indent
 let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
-

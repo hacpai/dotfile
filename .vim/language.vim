@@ -5,12 +5,13 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " =================================================}}}
 
+" Java {{{ ================================
+set tags +=~/others/openjdksrc/java/tags
+" ========================================}}}
 
 " Python {{{ ==================
-
 " python-syntax
 let g:python_highlight_all = 1
-
 " ===========================}}}
 
 
