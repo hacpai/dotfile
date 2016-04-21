@@ -49,6 +49,10 @@ Plugin 'tell-k/vim-autopep8'
 Plugin 'davidhalter/jedi-vim'
 
 
+" Java
+Plugin 'artur-shaik/vim-javacomplete2'
+
+
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
@@ -57,7 +61,7 @@ Plugin 'ervandew/supertab'
 Plugin 'osyo-manga/vim-marching'
 Plugin 'Shougo/vimproc.vim'
 
-
+" Go
 Plugin 'fatih/vim-go'
 Plugin 'vim-jp/vim-go-extra'
 
