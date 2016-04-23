@@ -1,12 +1,18 @@
 #!/bin/bash
-# @author
+# @author hacpai
 
-# Install brew
+# install brew
 if type brew > /dev/null; then
   echo "Homebrew Exists";
 else
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 fi;
+# curl supported
+brew install curl
+brew link curl --force
+# ssh supported
+brew tap homebrew/dupes
+brew install openssh
 # Java supported
 brew cask install java7;
 # Go supported
@@ -15,10 +21,16 @@ brew install go;
 brew install vim --with-lua --HEAD;
 # ag supproted
 brew install ag;
+# z supported
+brew install z
+# zsh supported
+brew install zsh;
+# iterm2 supported
+brew install iterm2;
 
 # vim pulgin controller - vundle
 [[ -d ~/.vim/bundle/Vundle.vim ]] || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
-# Update vim profile
+# Add vim profile
 ln -s ~/dotfile/.vimrc ~/.vimrc
 ln -s ~/dotfile/.vim/plugin.vim ~/.vim/plugin.vim
 ln -s ~/dotfile/.vim/completion.vim ~/.vim/completion.vim
@@ -38,3 +50,19 @@ else
 fi;
 # install vim plugins
 vim +PluginInstall! +qall;
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
+# zsh-autosuggestions supported
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions;
+# zsh-syntax-highlighting supported
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting;
+# Add .zshrc
+ln -s ~/dotfile/.zshrc ~/.zshrc;
+# Add oh-my-zsh theme
+ln -s ~/dotfile/.oh-my-zsh/custom/themes/roamlog.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/roamlog.zsh-theme;
+
+# Add .bashrc
+ln -s ~/dotfile/.bashrc ~/.bashrc
+# Add git-prompt.sh
+curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh;
