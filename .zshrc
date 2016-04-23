@@ -45,7 +45,7 @@ ZSH_THEME="roamlog"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autopep8 git zsh_reload colored-man colorize github vagrant virtualenv pip python brew brew-cask osx zsh-syntax-highlighting z command-not-found common-aliases git-prompt git-remote-branch gitignore osx profiles themes terminalapp emoji-clock zsh-autosuggestions golang)
+plugins=(autopep8 git zsh_reload colored-man colorize github vagrant virtualenv pip python brew brew-cask osx z command-not-found common-aliases git-prompt git-remote-branch gitignore osx profiles themes terminalapp emoji-clock zsh-autosuggestions zsh-syntax-highlighting go golang mvn redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,13 +77,12 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias ls="gls --color=auto"
 alias upgrade_brew_cask="brew update && brew cleanup && brew cask cleanup && brew upgrade brew-cask"
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
 #eval `gdircolors ~/dotfile/dircolors-solarized.256dark`
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
-export LS_COLORS='no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bmp=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.png=01;35:'
+#export LS_COLORS='no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bmp=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.png=01;35:'
 
 # see: http://blog.tomtung.com/2009/11/cowsay-fortune
 #      http://www.commandlinefu.com/commands/view/3584/remove-color-codes-special-characters-with-sed
@@ -95,26 +94,18 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40
  
 #export LANG="en_US.UTF-8"
 #export PATH="/usr/games:/usr/local/bin:$PATH"
-cmd_sed="$(command -v gsed)" || cmd_sed=sed
-cmd_lolcat="$(command -v lolcat_m)" || cmd_lolcat="$(command -v lolcat)"
-SaySomething=$(fortune -a -s | $cmd_sed -E "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g")
-cowsay $SaySomething | $cmd_lolcat -f
+#cmd_sed="$(command -v gsed)" || cmd_sed=sed
+#cmd_lolcat="$(command -v lolcat_m)" || cmd_lolcat="$(command -v lolcat)"
+#SaySomething=$(fortune -a -s | $cmd_sed -E "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g")
+#cowsay $SaySomething | $cmd_lolcat -f
 
-printf "\n"
-
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
-# Setup zsh-autosuggestions
-#source ~/.zsh-autosuggestions/autosuggestions.zsh
-
-# Enable autosuggestions automatically
-#zle-line-init() {
-    #zle autosuggest-start
-#}
-#zle -N zle-line-init
-
-# use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
-# zsh-autosuggestions is designed to be unobtrusive)
-#bindkey '^T' autosuggest-toggle
+#printf "\n"
 
 # SET the GOPATH
 export GOPATH=$HOME/gospace
+
+# zvim supported
+alias zvim='nvim -u ~/iDev/DotFiles/config/nvim/init.vim' 
+
+# sock5 supported
+alias px='ALL_PROXY=sock5:127.0.0.1:1080' 
