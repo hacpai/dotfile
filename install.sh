@@ -14,19 +14,20 @@ brew link curl --force
 brew tap homebrew/dupes
 brew install openssh
 # Java supported
+brew tap caskroom/versions
 brew cask install java7;
 # Go supported
 brew install go;
 # vim supported
-brew install vim --with-lua --HEAD;
+brew install vim --with-lua;
 # ag supproted
 brew install ag;
 # z supported
-brew install z
+brew install z;
 # zsh supported
 brew install zsh;
 # iterm2 supported
-brew install iterm2;
+brew cask install iterm2;
 
 # vim pulgin controller - vundle
 [[ -d ~/.vim/bundle/Vundle.vim ]] || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
