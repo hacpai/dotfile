@@ -15,7 +15,7 @@ brew tap homebrew/dupes
 brew install openssh
 # Java supported
 brew tap caskroom/versions
-brew cask install java7;
+brew cask install java8;
 # Go supported
 brew install go;
 # vim supported
@@ -67,3 +67,8 @@ ln -s ~/dotfile/.oh-my-zsh/custom/themes/roamlog.zsh-theme ${ZSH_CUSTOM:-~/.oh-m
 ln -s ~/dotfile/.bashrc ~/.bashrc
 # Add git-prompt.sh
 curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh;
+
+# install intellij-idea
+brew cask install intellij-idea
+
+git clone https://github.com/caleb/gruvbox-idea.git;cd gruvbox-idea;./install.bash

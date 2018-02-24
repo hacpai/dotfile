@@ -45,7 +45,7 @@ ZSH_THEME="roamlog"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autopep8 git zsh_reload colored-man colorize github vagrant virtualenv pip python brew brew-cask osx z command-not-found common-aliases git-prompt git-remote-branch gitignore osx profiles themes terminalapp emoji-clock zsh-autosuggestions zsh-syntax-highlighting go golang mvn redis-cli)
+plugins=(autopep8 git zsh_reload colored-man colorize github vagrant virtualenv python pip brew brew-cask osx z command-not-found common-aliases git-prompt git-remote-branch gitignore osx profiles themes terminalapp emoji-clock zsh-autosuggestions zsh-syntax-highlighting go golang mvn redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,6 +84,7 @@ alias upgrade_brew_cask="brew update && brew cleanup && brew cask cleanup && bre
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 #export LS_COLORS='no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bmp=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.png=01;35:'
 
+doge
 # see: http://blog.tomtung.com/2009/11/cowsay-fortune
 #      http://www.commandlinefu.com/commands/view/3584/remove-color-codes-special-characters-with-sed
 #      https://github.com/busyloop/lolcat
@@ -107,5 +108,13 @@ export GOPATH=$HOME/gospace
 # zvim supported
 alias zvim='nvim -u ~/iDev/DotFiles/config/nvim/init.vim' 
 
-# sock5 supported
-alias px='ALL_PROXY=sock5:127.0.0.1:1080' 
+# proxy supported
+alias allproxy='http_proxy=http://127.0.0.1:1080;export https_proxy=http://127.0.0.1:1080;'
+alias unproxy='unset http_proxy;unset https_proxy'# python executable in your PATH
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# ruby executable in you PATH
+export PATH=/usr/local/Cellar/ruby/2.4.3_1/bin:$PATH
+
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
