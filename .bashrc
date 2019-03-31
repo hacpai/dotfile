@@ -24,14 +24,14 @@ fi
 #
 #      requires `fortune` and ruby gem `lolcat`
  
-#printf "\n"
+printf "\n"
 
-#cmd_sed="$(command -v gsed)" || cmd_sed=sed
-#cmd_lolcat="$(command -v lolcat_m)" || cmd_lolcat="$(command -v lolcat)"
-#SaySomething=$(fortune -a -s | $cmd_sed -E "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g")
-#cowsay $SaySomething | $cmd_lolcat -f
+cmd_sed="$(command -v gsed)" || cmd_sed=sed
+cmd_lolcat="$(command -v lolcat_m)" || cmd_lolcat="$(command -v lolcat)"
+SaySomething=$(fortune -a -s | $cmd_sed -E "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g")
+cowsay $SaySomething | $cmd_lolcat -f
 
-#printf "\n"
+printf "\n"
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 

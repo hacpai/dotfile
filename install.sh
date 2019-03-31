@@ -11,7 +11,6 @@ fi;
 brew install curl
 brew link curl --force
 # ssh supported
-brew tap homebrew/dupes
 brew install openssh
 # Java supported
 brew tap caskroom/versions
@@ -19,7 +18,7 @@ brew cask install java8;
 # Go supported
 brew install go;
 # vim supported
-brew install vim --with-lua;
+brew install vim;
 # ag supproted
 brew install ag;
 # z supported
@@ -55,11 +54,11 @@ vim +PluginInstall! +qall;
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
 # zsh-autosuggestions supported
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions;
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions;
 # zsh-syntax-highlighting supported
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting;
 # Add .zshrc
-ln -s ~/dotfile/.zshrc ~/.zshrc;
+rm -rf ~/.zshrc;ln -s ~/dotfile/.zshrc ~/.zshrc;
 # Add oh-my-zsh theme
 ln -s ~/dotfile/.oh-my-zsh/custom/themes/roamlog.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/roamlog.zsh-theme;
 
@@ -70,5 +69,13 @@ curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contri
 
 # install intellij-idea
 brew cask install intellij-idea
-
 git clone https://github.com/caleb/gruvbox-idea.git;cd gruvbox-idea;./install.bash
+
+# install alfred
+brew cask install alfred
+
+# install popclip
+brew cask install popclip
+
+# install istat-menus
+brew cask install istat-menus
